@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:orientation="vertical"
+    tools:context=".UserInfoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/user_info"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_user_info"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@color/colorLightGrey"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_user_info_select_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_photo"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etl_user_info_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_user_info_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:textSize="15sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etl_user_info_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_user_info_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lastname"
+            android:inputType="text"
+            android:textSize="15sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_user_info_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/continuee"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_btn"/>
+
+</LinearLayout>

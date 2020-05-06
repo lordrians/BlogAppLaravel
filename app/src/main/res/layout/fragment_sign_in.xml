@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingStart="50dp"
+    android:paddingEnd="50dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_app"
+        android:textSize="32sp"
+        android:fontFamily="@font/leckerlione"
+        android:textColor="@color/colorGrey"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="80dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etl_signin_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_signin_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etl_signin_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_signin_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="15sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_btn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dont_have_account"
+            android:layout_marginEnd="6dp"/>
+
+        <TextView
+            android:id="@+id/tv_signin_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

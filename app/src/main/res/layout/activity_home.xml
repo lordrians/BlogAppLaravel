@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_home_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/cl_home_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:fitsSystemWindows="false"
+        android:clickable="false"
+        android:focusable="false">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/botapp_home_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:clickable="false"
+            android:background="@android:color/transparent"
+            android:theme="@style/AppTheme.BottomAppBar"
+            app:fabAlignmentMode="center"
+            app:fabCradleRoundedCornerRadius="16dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/botnav_home_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:menu="@menu/menu_botnav_home_fragment"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                app:labelVisibilityMode="unlabeled"/>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_home_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_add_black_24dp"
+            app:rippleColor="@color/colorWhite"
+            android:tint="@color/colorWhite"
+            app:layout_anchor="@id/botapp_home_activity"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>
