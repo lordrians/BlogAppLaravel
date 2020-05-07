@@ -8,4 +8,6 @@ public class Api {
     public static final String SAVE_USER_INFO = HOME + "/save_user_info";
     public static final String POST =HOME + "/posts";
     public static final String ADD_POST = POST + "/create";
+    public static final String UPDATE_POST = POST + "/update";
+    public static final String DELETE_POST = POST + "/delete";
 }

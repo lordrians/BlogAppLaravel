@@ -21,4 +21,8 @@
     <string name="newpost">New Post</string>
     <string name="changephoto">Change Photo</string>
     <string name="post">Post</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="updatepost">Update Post</string>
+    <string name="save">Save</string>
 </resources>

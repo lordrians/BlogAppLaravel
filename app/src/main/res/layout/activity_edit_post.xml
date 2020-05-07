@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AddPostActivity">
+    tools:context=".EditPostActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         app:title="">
 
         <ImageButton
-            android:id="@+id/btn_addpost_backtoolbar"
+            android:id="@+id/btn_editpost_backtoolbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_arrow_back_black"
@@ -25,18 +25,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/newpost"
+            android:text="@string/updatepost"
             android:textColor="@color/colorBlack"
             android:textSize="18sp"/>
 
 
     </com.google.android.material.appbar.MaterialToolbar>
 
-    
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,25 +44,9 @@
             android:padding="16dp"
             android:layout_marginTop="6dp">
 
-            <ImageView
-                android:id="@+id/iv_addpost_photo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:src="@color/colorLightGrey"
-                android:adjustViewBounds="true"/>
-
-            <TextView
-                android:id="@+id/tv_addpost_changephoto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/changephoto"
-                android:textColor="@color/colorPrimary"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"/>
 
             <EditText
-                android:id="@+id/et_addpost_desc"
+                android:id="@+id/et_editpost_desc"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:inputType="textMultiLine"
@@ -72,10 +56,10 @@
                 android:background="@drawable/bg_desc_newpost"/>
 
             <Button
-                android:id="@+id/btn_addpost_post"
+                android:id="@+id/btn_editpost_save"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/post"
+                android:text="@string/save"
                 android:background="@drawable/rounded_btn"
                 android:textColor="@color/colorWhite"
                 android:layout_marginTop="12dp"
@@ -83,7 +67,7 @@
                 android:textAllCaps="false"/>
 
         </LinearLayout>
-        
+
     </ScrollView>
-    
+
 </LinearLayout>

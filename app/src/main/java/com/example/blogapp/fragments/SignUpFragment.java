@@ -178,6 +178,7 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
                     SharedPreferences userPref = getActivity().getApplicationContext().getSharedPreferences(GlobalVar.FILE_USER,0);
                     SharedPreferences.Editor editor = userPref.edit();
                     editor.putString("token", object.getString("token"));
+                    editor.putInt("id", user.getInt("id"));
                     editor.putString("name", user.getString("name"));
                     editor.putString("lastname", user.getString("lastname"));
                     editor.putString("photo", user.getString("photo"));
